@@ -19,6 +19,22 @@
 		EA81D60D1935ED8F002E879B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA81D60B1935ED8F002E879B /* InfoPlist.strings */; };
 		EA81D60F1935ED8F002E879B /* Study_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D60E1935ED8F002E879B /* Study_iOSTests.m */; };
 		EA81D61F1935EF7F002E879B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D61B1935EF7F002E879B /* AppDelegate.m */; };
+		EA81D6251936E086002E879B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D6231936E086002E879B /* MainViewController.m */; };
+		EA81D6261936E086002E879B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA81D6241936E086002E879B /* MainViewController.xib */; };
+		EA81D62A1936E496002E879B /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D6281936E496002E879B /* ControlViewController.m */; };
+		EA81D62B1936E496002E879B /* ControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA81D6291936E496002E879B /* ControlViewController.xib */; };
+		EA81D62E1936FD39002E879B /* AppRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D62D1936FD39002E879B /* AppRootController.m */; };
+		EA81D63619370A92002E879B /* v3_grzx_back to top_button.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63219370A92002E879B /* v3_grzx_back to top_button.png */; };
+		EA81D63719370A92002E879B /* v3_grzx_back to top_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63319370A92002E879B /* v3_grzx_back to top_button@2x.png */; };
+		EA81D63819370A92002E879B /* v3_grzx_back to top_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63419370A92002E879B /* v3_grzx_back to top_button_pressed.png */; };
+		EA81D63919370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63519370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png */; };
+		EA81D63C19372B11002E879B /* PRESwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D63B19372B11002E879B /* PRESwitch.m */; };
+		EA81D64319372C17002E879B /* switch_graybg.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63D19372C17002E879B /* switch_graybg.png */; };
+		EA81D64419372C17002E879B /* switch_graybg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63E19372C17002E879B /* switch_graybg@2x.png */; };
+		EA81D64519372C17002E879B /* switch_orangebg.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63F19372C17002E879B /* switch_orangebg.png */; };
+		EA81D64619372C17002E879B /* switch_orangebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64019372C17002E879B /* switch_orangebg@2x.png */; };
+		EA81D64719372C17002E879B /* switch_rollbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64119372C17002E879B /* switch_rollbox.png */; };
+		EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64219372C17002E879B /* switch_rollbox@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +64,26 @@
 		EA81D60E1935ED8F002E879B /* Study_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Study_iOSTests.m; sourceTree = "<group>"; };
 		EA81D61A1935EF7F002E879B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA81D61B1935EF7F002E879B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA81D6221936E086002E879B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EA81D6231936E086002E879B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EA81D6241936E086002E879B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		EA81D6271936E496002E879B /* ControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlViewController.h; sourceTree = "<group>"; };
+		EA81D6281936E496002E879B /* ControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
+		EA81D6291936E496002E879B /* ControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlViewController.xib; sourceTree = "<group>"; };
+		EA81D62C1936FD39002E879B /* AppRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRootController.h; sourceTree = "<group>"; };
+		EA81D62D1936FD39002E879B /* AppRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRootController.m; sourceTree = "<group>"; };
+		EA81D63219370A92002E879B /* v3_grzx_back to top_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button.png"; sourceTree = "<group>"; };
+		EA81D63319370A92002E879B /* v3_grzx_back to top_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button@2x.png"; sourceTree = "<group>"; };
+		EA81D63419370A92002E879B /* v3_grzx_back to top_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button_pressed.png"; sourceTree = "<group>"; };
+		EA81D63519370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button_pressed@2x.png"; sourceTree = "<group>"; };
+		EA81D63A19372B11002E879B /* PRESwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRESwitch.h; sourceTree = "<group>"; };
+		EA81D63B19372B11002E879B /* PRESwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRESwitch.m; sourceTree = "<group>"; };
+		EA81D63D19372C17002E879B /* switch_graybg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_graybg.png; sourceTree = "<group>"; };
+		EA81D63E19372C17002E879B /* switch_graybg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_graybg@2x.png"; sourceTree = "<group>"; };
+		EA81D63F19372C17002E879B /* switch_orangebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_orangebg.png; sourceTree = "<group>"; };
+		EA81D64019372C17002E879B /* switch_orangebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_orangebg@2x.png"; sourceTree = "<group>"; };
+		EA81D64119372C17002E879B /* switch_rollbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_rollbox.png; sourceTree = "<group>"; };
+		EA81D64219372C17002E879B /* switch_rollbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_rollbox@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +113,7 @@
 		EA81D5DD1935ED8F002E879B = {
 			isa = PBXGroup;
 			children = (
+				EA81D62F193701FB002E879B /* BaseModule */,
 				EA81D6181935EF7F002E879B /* Classes */,
 				EA81D61C1935EF7F002E879B /* Resource */,
 				EA81D5EF1935ED8F002E879B /* Study iOS */,
@@ -148,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				EA81D6191935EF7F002E879B /* App */,
+				EA81D6201936E003002E879B /* UIControl */,
+				EA81D6211936E003002E879B /* UIView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -157,6 +196,11 @@
 			children = (
 				EA81D61A1935EF7F002E879B /* AppDelegate.h */,
 				EA81D61B1935EF7F002E879B /* AppDelegate.m */,
+				EA81D6221936E086002E879B /* MainViewController.h */,
+				EA81D6231936E086002E879B /* MainViewController.m */,
+				EA81D6241936E086002E879B /* MainViewController.xib */,
+				EA81D62C1936FD39002E879B /* AppRootController.h */,
+				EA81D62D1936FD39002E879B /* AppRootController.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -165,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				EA81D61D1935EF7F002E879B /* Drawable */,
-				EA81D61E1935EF7F002E879B /* Layout */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -173,15 +216,60 @@
 		EA81D61D1935EF7F002E879B /* Drawable */ = {
 			isa = PBXGroup;
 			children = (
+				EA81D63119370A92002E879B /* UIControl */,
 			);
 			path = Drawable;
 			sourceTree = "<group>";
 		};
-		EA81D61E1935EF7F002E879B /* Layout */ = {
+		EA81D6201936E003002E879B /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				EA81D6271936E496002E879B /* ControlViewController.h */,
+				EA81D6281936E496002E879B /* ControlViewController.m */,
+				EA81D6291936E496002E879B /* ControlViewController.xib */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		EA81D6211936E003002E879B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Layout;
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		EA81D62F193701FB002E879B /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				EA81D630193701FB002E879B /* MyControl */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		EA81D630193701FB002E879B /* MyControl */ = {
+			isa = PBXGroup;
+			children = (
+				EA81D63A19372B11002E879B /* PRESwitch.h */,
+				EA81D63B19372B11002E879B /* PRESwitch.m */,
+			);
+			path = MyControl;
+			sourceTree = "<group>";
+		};
+		EA81D63119370A92002E879B /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				EA81D63D19372C17002E879B /* switch_graybg.png */,
+				EA81D63E19372C17002E879B /* switch_graybg@2x.png */,
+				EA81D63F19372C17002E879B /* switch_orangebg.png */,
+				EA81D64019372C17002E879B /* switch_orangebg@2x.png */,
+				EA81D64119372C17002E879B /* switch_rollbox.png */,
+				EA81D64219372C17002E879B /* switch_rollbox@2x.png */,
+				EA81D63219370A92002E879B /* v3_grzx_back to top_button.png */,
+				EA81D63319370A92002E879B /* v3_grzx_back to top_button@2x.png */,
+				EA81D63419370A92002E879B /* v3_grzx_back to top_button_pressed.png */,
+				EA81D63519370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png */,
+			);
+			path = UIControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +347,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA81D64719372C17002E879B /* switch_rollbox.png in Resources */,
+				EA81D63719370A92002E879B /* v3_grzx_back to top_button@2x.png in Resources */,
+				EA81D64619372C17002E879B /* switch_orangebg@2x.png in Resources */,
+				EA81D63819370A92002E879B /* v3_grzx_back to top_button_pressed.png in Resources */,
+				EA81D64519372C17002E879B /* switch_orangebg.png in Resources */,
+				EA81D64419372C17002E879B /* switch_graybg@2x.png in Resources */,
 				EA81D5F41935ED8F002E879B /* InfoPlist.strings in Resources */,
+				EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */,
+				EA81D6261936E086002E879B /* MainViewController.xib in Resources */,
+				EA81D63619370A92002E879B /* v3_grzx_back to top_button.png in Resources */,
+				EA81D64319372C17002E879B /* switch_graybg.png in Resources */,
+				EA81D62B1936E496002E879B /* ControlViewController.xib in Resources */,
 				EA81D5FC1935ED8F002E879B /* Images.xcassets in Resources */,
+				EA81D63919370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA81D61F1935EF7F002E879B /* AppDelegate.m in Sources */,
+				EA81D62E1936FD39002E879B /* AppRootController.m in Sources */,
+				EA81D63C19372B11002E879B /* PRESwitch.m in Sources */,
+				EA81D6251936E086002E879B /* MainViewController.m in Sources */,
+				EA81D62A1936E496002E879B /* ControlViewController.m in Sources */,
 				EA81D5F61935ED8F002E879B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +583,7 @@
 				EA81D6141935ED8F002E879B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA81D6151935ED8F002E879B /* Build configuration list for PBXNativeTarget "Study iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +592,7 @@
 				EA81D6171935ED8F002E879B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
