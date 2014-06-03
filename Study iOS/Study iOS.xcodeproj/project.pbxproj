@@ -24,10 +24,10 @@
 		EA81D62A1936E496002E879B /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D6281936E496002E879B /* ControlViewController.m */; };
 		EA81D62B1936E496002E879B /* ControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA81D6291936E496002E879B /* ControlViewController.xib */; };
 		EA81D62E1936FD39002E879B /* AppRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D62D1936FD39002E879B /* AppRootController.m */; };
-		EA81D63619370A92002E879B /* v3_grzx_back to top_button.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63219370A92002E879B /* v3_grzx_back to top_button.png */; };
-		EA81D63719370A92002E879B /* v3_grzx_back to top_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63319370A92002E879B /* v3_grzx_back to top_button@2x.png */; };
-		EA81D63819370A92002E879B /* v3_grzx_back to top_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63419370A92002E879B /* v3_grzx_back to top_button_pressed.png */; };
-		EA81D63919370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63519370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png */; };
+		EA81D63619370A92002E879B /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63219370A92002E879B /* black.png */; };
+		EA81D63719370A92002E879B /* black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63319370A92002E879B /* black@2x.png */; };
+		EA81D63819370A92002E879B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63419370A92002E879B /* red.png */; };
+		EA81D63919370A92002E879B /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63519370A92002E879B /* red@2x.png */; };
 		EA81D63C19372B11002E879B /* PRESwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81D63B19372B11002E879B /* PRESwitch.m */; };
 		EA81D64319372C17002E879B /* switch_graybg.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63D19372C17002E879B /* switch_graybg.png */; };
 		EA81D64419372C17002E879B /* switch_graybg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D63E19372C17002E879B /* switch_graybg@2x.png */; };
@@ -35,6 +35,7 @@
 		EA81D64619372C17002E879B /* switch_orangebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64019372C17002E879B /* switch_orangebg@2x.png */; };
 		EA81D64719372C17002E879B /* switch_rollbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64119372C17002E879B /* switch_rollbox.png */; };
 		EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64219372C17002E879B /* switch_rollbox@2x.png */; };
+		EACEAF531938D6BA00A008EA /* PRESlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EACEAF521938D6BA00A008EA /* PRESlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +73,10 @@
 		EA81D6291936E496002E879B /* ControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlViewController.xib; sourceTree = "<group>"; };
 		EA81D62C1936FD39002E879B /* AppRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRootController.h; sourceTree = "<group>"; };
 		EA81D62D1936FD39002E879B /* AppRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRootController.m; sourceTree = "<group>"; };
-		EA81D63219370A92002E879B /* v3_grzx_back to top_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button.png"; sourceTree = "<group>"; };
-		EA81D63319370A92002E879B /* v3_grzx_back to top_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button@2x.png"; sourceTree = "<group>"; };
-		EA81D63419370A92002E879B /* v3_grzx_back to top_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button_pressed.png"; sourceTree = "<group>"; };
-		EA81D63519370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v3_grzx_back to top_button_pressed@2x.png"; sourceTree = "<group>"; };
+		EA81D63219370A92002E879B /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
+		EA81D63319370A92002E879B /* black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black@2x.png"; sourceTree = "<group>"; };
+		EA81D63419370A92002E879B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		EA81D63519370A92002E879B /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
 		EA81D63A19372B11002E879B /* PRESwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRESwitch.h; sourceTree = "<group>"; };
 		EA81D63B19372B11002E879B /* PRESwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRESwitch.m; sourceTree = "<group>"; };
 		EA81D63D19372C17002E879B /* switch_graybg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_graybg.png; sourceTree = "<group>"; };
@@ -84,6 +85,8 @@
 		EA81D64019372C17002E879B /* switch_orangebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_orangebg@2x.png"; sourceTree = "<group>"; };
 		EA81D64119372C17002E879B /* switch_rollbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_rollbox.png; sourceTree = "<group>"; };
 		EA81D64219372C17002E879B /* switch_rollbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_rollbox@2x.png"; sourceTree = "<group>"; };
+		EACEAF511938D6BA00A008EA /* PRESlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRESlider.h; sourceTree = "<group>"; };
+		EACEAF521938D6BA00A008EA /* PRESlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRESlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +254,8 @@
 			children = (
 				EA81D63A19372B11002E879B /* PRESwitch.h */,
 				EA81D63B19372B11002E879B /* PRESwitch.m */,
+				EACEAF511938D6BA00A008EA /* PRESlider.h */,
+				EACEAF521938D6BA00A008EA /* PRESlider.m */,
 			);
 			path = MyControl;
 			sourceTree = "<group>";
@@ -264,10 +269,10 @@
 				EA81D64019372C17002E879B /* switch_orangebg@2x.png */,
 				EA81D64119372C17002E879B /* switch_rollbox.png */,
 				EA81D64219372C17002E879B /* switch_rollbox@2x.png */,
-				EA81D63219370A92002E879B /* v3_grzx_back to top_button.png */,
-				EA81D63319370A92002E879B /* v3_grzx_back to top_button@2x.png */,
-				EA81D63419370A92002E879B /* v3_grzx_back to top_button_pressed.png */,
-				EA81D63519370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png */,
+				EA81D63219370A92002E879B /* black.png */,
+				EA81D63319370A92002E879B /* black@2x.png */,
+				EA81D63419370A92002E879B /* red.png */,
+				EA81D63519370A92002E879B /* red@2x.png */,
 			);
 			path = UIControl;
 			sourceTree = "<group>";
@@ -348,19 +353,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA81D64719372C17002E879B /* switch_rollbox.png in Resources */,
-				EA81D63719370A92002E879B /* v3_grzx_back to top_button@2x.png in Resources */,
+				EA81D63719370A92002E879B /* black@2x.png in Resources */,
 				EA81D64619372C17002E879B /* switch_orangebg@2x.png in Resources */,
-				EA81D63819370A92002E879B /* v3_grzx_back to top_button_pressed.png in Resources */,
+				EA81D63819370A92002E879B /* red.png in Resources */,
 				EA81D64519372C17002E879B /* switch_orangebg.png in Resources */,
 				EA81D64419372C17002E879B /* switch_graybg@2x.png in Resources */,
 				EA81D5F41935ED8F002E879B /* InfoPlist.strings in Resources */,
 				EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */,
 				EA81D6261936E086002E879B /* MainViewController.xib in Resources */,
-				EA81D63619370A92002E879B /* v3_grzx_back to top_button.png in Resources */,
+				EA81D63619370A92002E879B /* black.png in Resources */,
 				EA81D64319372C17002E879B /* switch_graybg.png in Resources */,
 				EA81D62B1936E496002E879B /* ControlViewController.xib in Resources */,
 				EA81D5FC1935ED8F002E879B /* Images.xcassets in Resources */,
-				EA81D63919370A92002E879B /* v3_grzx_back to top_button_pressed@2x.png in Resources */,
+				EA81D63919370A92002E879B /* red@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +390,7 @@
 				EA81D6251936E086002E879B /* MainViewController.m in Sources */,
 				EA81D62A1936E496002E879B /* ControlViewController.m in Sources */,
 				EA81D5F61935ED8F002E879B /* main.m in Sources */,
+				EACEAF531938D6BA00A008EA /* PRESlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

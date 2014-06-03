@@ -27,6 +27,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [_switch1 setEnabled:NO];
+    
+    [_slider setMinimumTrackTintColor:[UIColor redColor]];
+    [_slider setMaximumTrackTintColor:[UIColor blackColor]];
+    [_slider setThumbTintColor:[UIColor grayColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +40,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_switch1 release];
+    [_slider release];
+    [super dealloc];
+}
 @end
