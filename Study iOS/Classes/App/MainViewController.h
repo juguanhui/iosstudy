@@ -11,7 +11,9 @@
 @interface MainViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UIButton *toControl;
+@property (retain, nonatomic) IBOutlet UIButton *toTransform;
 
 - (IBAction)onControlClick:(id)sender;
+- (IBAction)onTransformClick:(id)sender;
 
 @end

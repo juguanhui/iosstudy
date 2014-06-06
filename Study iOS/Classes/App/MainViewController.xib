@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="toControl" destination="VKy-ft-Luk" id="Rbq-CO-GXK"/>
+                <outlet property="toTransform" destination="Iuf-0Y-JOo" id="Doy-80-9aN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,6 +24,16 @@
                     </state>
                     <connections>
                         <action selector="onControlClick:" destination="-1" eventType="touchUpInside" id="tPF-o6-56b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iuf-0Y-JOo">
+                    <rect key="frame" x="30" y="150" width="200" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="CATransform3D">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTransformClick:" destination="-1" eventType="touchUpInside" id="VeZ-z6-xkt"/>
                     </connections>
                 </button>
             </subviews>

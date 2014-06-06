@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "ControlViewController.h"
+#import "TransformViewController.h"
 
 @interface MainViewController ()
 
@@ -39,13 +40,20 @@
 
 - (void)dealloc {
     [_toControl release];
+    [_toTransform release];
     [super dealloc];
 }
 
 - (IBAction)onControlClick:(id)sender {
-    ControlViewController* controlViewController = [[ControlViewController alloc] initWithNibName:@"ControlViewController" bundle:nil];
-    [self.navigationController pushViewController:controlViewController animated:YES];
-    [controlViewController release];
+    ControlViewController* viewController = [[ControlViewController alloc] initWithNibName:@"ControlViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+    [viewController release];
+}
+
+- (IBAction)onTransformClick:(id)sender {
+    TransformViewController* viewController = [[TransformViewController alloc] initWithNibName:@"TransformViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+    [viewController release];
 }
 
 @end

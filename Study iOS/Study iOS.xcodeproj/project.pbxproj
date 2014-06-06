@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2019191941E74100820F3C /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2019171941E74100820F3C /* TransformViewController.m */; };
+		EA20191A1941E74100820F3C /* TransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2019181941E74100820F3C /* TransformViewController.xib */; };
 		EA81D5EA1935ED8F002E879B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA81D5E91935ED8F002E879B /* Foundation.framework */; };
 		EA81D5EC1935ED8F002E879B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA81D5EB1935ED8F002E879B /* CoreGraphics.framework */; };
 		EA81D5EE1935ED8F002E879B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA81D5ED1935ED8F002E879B /* UIKit.framework */; };
@@ -51,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2019161941E74100820F3C /* TransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransformViewController.h; path = CATransform3D/TransformViewController.h; sourceTree = "<group>"; };
+		EA2019171941E74100820F3C /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransformViewController.m; path = CATransform3D/TransformViewController.m; sourceTree = "<group>"; };
+		EA2019181941E74100820F3C /* TransformViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransformViewController.xib; path = CATransform3D/TransformViewController.xib; sourceTree = "<group>"; };
 		EA81D5E61935ED8F002E879B /* Study iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA81D5E91935ED8F002E879B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA81D5EB1935ED8F002E879B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +123,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2019151941E6E800820F3C /* CATransform3D */ = {
+			isa = PBXGroup;
+			children = (
+				EA2019161941E74100820F3C /* TransformViewController.h */,
+				EA2019171941E74100820F3C /* TransformViewController.m */,
+				EA2019181941E74100820F3C /* TransformViewController.xib */,
+			);
+			name = CATransform3D;
+			sourceTree = "<group>";
+		};
 		EA81D5DD1935ED8F002E879B = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				EA81D6191935EF7F002E879B /* App */,
+				EA2019151941E6E800820F3C /* CATransform3D */,
 				EA81D6201936E003002E879B /* UIControl */,
 				EA81D6211936E003002E879B /* UIView */,
 			);
@@ -366,6 +382,7 @@
 				EA81D63819370A92002E879B /* red.png in Resources */,
 				EA81D64519372C17002E879B /* switch_orangebg.png in Resources */,
 				EA81D64419372C17002E879B /* switch_graybg@2x.png in Resources */,
+				EA20191A1941E74100820F3C /* TransformViewController.xib in Resources */,
 				EA81D5F41935ED8F002E879B /* InfoPlist.strings in Resources */,
 				EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */,
 				EA81D6261936E086002E879B /* MainViewController.xib in Resources */,
@@ -401,6 +418,7 @@
 				EA81D62A1936E496002E879B /* ControlViewController.m in Sources */,
 				EA81D5F61935ED8F002E879B /* main.m in Sources */,
 				EACEAF531938D6BA00A008EA /* PRESlider.m in Sources */,
+				EA2019191941E74100820F3C /* TransformViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,165 @@
+<html lang="en"><head>
+    <title>CASwitch Class Reference</title>
+    <meta charset="utf-8">
+</head>    
+<body>
+	<h1><code>CASwitch</code>类说明</h1>
+	<div>
+		<table cellspacing="0" class="specbox">
+			<tbody>
+				<tr>
+					<td scope="row"><strong><span>基类</span></strong></td>
+					<td><div>CAControl</div></td>
+				</tr>
+				<tr>
+					<td scope="row"><strong><span>头文件</span></strong></td>
+					<td><div><span>CASwitch.h</span></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<h2>概述</h2>
+	<div>
+		<p><code>CASwitch</code>类用来创建和管理<code>ON/OFF</code>按钮。</p>
+		<p><code>CASwitch</code>类声明了一些属性和方法来控制<code>ON／OFF</code>状态。当<code>CASwitch</code>状态发生变化时，会发送<a href="">CAControlTouchUpInSide</a>事件。</p>
+		<p>可以通过设置<code>CAImage</code>来自定义<code>CASwitch</code>控件的外观。</p>
+	</div>
+	
+	<h2>功能</h2>
+	<div>
+		<h3>创建和初始化<code>CASwitch</code></h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASwitch/createWithFrame">createWithFrame</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASwitch/initWithFrame">initWithFrame</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h3>设置ON/OFF的状态</h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASwitch/setIsOn">setIsOn</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h3>自定义<code>CASwitch</code>外观</h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASwitch/setOnImage">setOnImage</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASwitch/setOffImage">setOffImage</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASwitch/setThumbTintImage">setThumbTintImage</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<h2>类方法</h2>
+	<div>
+		<a name="//CASwitch/createWithFrame" title = "createWithFrame"></a>
+		<ul>
+			<li>
+				<h3><code>createWithFrame</code></h3>
+				<p>返回一个<code>CASwitch</code>对象。</p>
+				<p><code>static CASwitch* createWithFrame(const CCRect& rect);</code></p>
+				<h4>返回值</h4>
+				<p>返回一个<code>CASwitch</code>对象。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>rect</em></dt>
+					<dd>新建<code>CASwitch</code>对象的<code>frame</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASwitch/initWithFrame" title = "initWithFrame"></a>
+		<ul>
+			<li>
+				<h3><code>initWithFrame</code></h3>
+				<p>初始化<code>CASwitch</code>对象的<code>frame</code>。</p>
+				<p><code>bool initWithFrame(const CCRect& rect);</code></p>
+				<h4>返回值</h4>	
+				<p>成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>rect</em></dt>
+					<dd>初始化<code>CASwitch</code>对象的<code>frame</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASwitch/setIsOn" title = "setIsOn"></a>
+		<ul>
+			<li>
+				<h3><code>setIsOn</code></h3>
+				<p>设置<code>CASwitch</code>对象的<code>开关状态</code>。</p>
+				<p><code>void setIsOn(bool on);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>on</em></dt>
+					<dd><code>true</code>表示开，<code>false</code>表示关。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASwitch/setOnImage" title = "setOnImage"></a>
+		<ul>
+			<li>
+				<h3><code>setOnImage</code></h3>
+				<p>设置<code>CASwitch</code>对象的<code>ON</code>状态显示的图像。</p>
+				<p><code>void setOnImage(CAImage* onImage);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>onImage</em></dt>
+					<dd><code>ON</code>状态下的<code>image</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASwitch/setOffImage" title = "setOffImage"></a>
+		<ul>
+			<li>
+				<h3><code>setOffImage</code></h3>
+				<p>设置<code>CASwitch</code>对象的<code>OFF</code>状态显示的图像。</p>
+				<p><code>void setOffImage(CAImage* offImage);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>offImage</em></dt>
+					<dd><code>OFF</code>状态下的<code>image</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
