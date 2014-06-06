@@ -32,6 +32,11 @@
     [_slider setMinimumTrackTintColor:[UIColor redColor]];
     [_slider setMaximumTrackTintColor:[UIColor blackColor]];
     [_slider setThumbTintColor:[UIColor grayColor]];
+    
+    [_segment setBackgroundImage:[UIImage imageNamed:@"red"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [_segment setBackgroundImage:[UIImage imageNamed:@"black"] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    
+    [_segment insertSegmentWithTitle:@"3" atIndex:2 animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +48,7 @@
 - (void)dealloc {
     [_switch1 release];
     [_slider release];
+    [_segment release];
     [super dealloc];
 }
 @end

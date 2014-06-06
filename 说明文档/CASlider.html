@@ -1,0 +1,208 @@
+<html lang="en"><head>
+    <title>CASlider Class Reference</title>
+    <meta charset="utf-8">
+</head>    
+<body>
+	<h1><code>CASlider</code>类说明</h1>
+	<div>
+		<table cellspacing="0" class="specbox">
+			<tbody>
+				<tr>
+					<td scope="row"><strong><span>基类</span></strong></td>
+					<td><div>CAControl</div></td>
+				</tr>
+				<tr>
+					<td scope="row"><strong><span>头文件</span></strong></td>
+					<td><div><span>CASlider.h</span></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<h2>概述</h2>
+	<div>
+		<p><code>CASlider</code>类用来在一段连续的取值范围内设定一个值。比如音乐音量设置中会使用到。</p>
+		<p>可以通过设置<code>CAImage</code>来自定义<code>CASlider</code>控件的外观。</p>
+	</div>
+	
+	<h2>功能</h2>
+	<div>
+		<h3>创建和初始化<code>CASlider</code></h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASlider/createWithFrame">createWithFrame</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASlider/initWithFrame">initWithFrame</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h3>设置<code>slider</code>取值</h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASlider/setValue">setValue</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASlider/setMinValue">setMinValue</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASlider/setMaxValue">setMaxValue</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h3>自定义<code>CASlider</code>外观</h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASlider/setTrackHeight">setTrackHeight</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASlider/setMinTrackTintImage">setMinTrackTintImage</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASlider/setMaxTrackTintImage">setMaxTrackTintImage</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<h2>类方法</h2>
+	<div>
+		<a name="//CASlider/createWithFrame" title = "createWithFrame"></a>
+		<ul>
+			<li>
+				<h3><code>createWithFrame</code></h3>
+				<p>返回一个<code>CASlider</code>对象。</p>
+				<p><code>static CASlider* createWithFrame(const CCRect& rect);</code></p>
+				<h4>返回值</h4>
+				<p>返回一个<code>CASlider</code>对象。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>rect</em></dt>
+					<dd>新建<code>CASlider</code>对象的<code>frame</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASlider/initWithFrame" title = "initWithFrame"></a>
+		<ul>
+			<li>
+				<h3><code>initWithFrame</code></h3>
+				<p>初始化<code>CASlider</code>对象的<code>frame</code>。</p>
+				<p><code>bool initWithFrame(const CCRect& rect);</code></p>
+				<h4>返回值</h4>	
+				<p>成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>rect</em></dt>
+					<dd>初始化<code>CASlider</code>对象的<code>frame</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASlider/setValue" title = "setValue"></a>
+		<ul>
+			<li>
+				<h3><code>setValue</code></h3>
+				<p>设置<code>CASlider</code>对象的值。</p>
+				<p><code>void setValue(float value)</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>value</em></dt>
+					<dd><code>value</code>必须在<code>minValue</code>和<code>maxValue</code>之间。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASlider/setMinValue" title = "setMinValue"></a>
+		<ul>
+			<li>
+				<h3><code>setMinValue</code></h3>
+				<p>设置<code>CASlider</code>最小取值。</p>
+				<p><code>void setMinValue(float minValue)</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>minValue</em></dt>
+					<dd><code>CASlider</code>的最小取值。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASlider/setMaxValue" title = "setMaxValue"></a>
+		<ul>
+			<li>
+				<h3><code>setMaxValue</code></h3>
+				<p>设置<code>CASlider</code>最大值。</p>
+				<p><code>void setMaxValue(float maxValue)</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>maxValue</em></dt>
+					<dd><code>CASlider</code>的最大值。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASlider/setMinTrackTintImage" title = "setMinTrackTintImage"></a>
+		<ul>
+			<li>
+				<h3><code>setMinTrackTintImage</code></h3>
+				<p>设置<code>CASlider</code>对象小值区域的图像。</p>
+				<p><code>void setMinTrackTintImage(CAImage* minTrackTintImage);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>minTrackTintImage</em></dt>
+					<dd><code>CASlider</code>对象小值区域的图像。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASlider/setMaxTrackTintImage" title = "setMaxTrackTintImage"></a>
+		<ul>
+			<li>
+				<h3><code>setMaxTrackTintImage</code></h3>
+				<p>设置<code>CASlider</code>对象大值区域的图像。</p>
+				<p><code>void setMaxTrackTintImage(CAImage* maxTrackTintImage);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>maxTrackTintImage</em></dt>
+					<dd><code>CASlider</code>对象大值区域的图像。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

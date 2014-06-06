@@ -1,0 +1,306 @@
+<html lang="en"><head>
+    <title>CASegmentedControl Class Reference</title>
+    <meta charset="utf-8">
+</head>    
+<body>
+	<h1><code>CASegmentedControl</code>类说明</h1>
+	<div>
+		<table cellspacing="0" class="specbox">
+			<tbody>
+				<tr>
+					<td scope="row"><strong><span>基类</span></strong></td>
+					<td><div>CAControl</div></td>
+				</tr>
+				<tr>
+					<td scope="row"><strong><span>头文件</span></strong></td>
+					<td><div><span>CASegmentedControl.h</span></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<h2>概述</h2>
+	<div>
+		<p><code>CASegmentedControl</code>对象是由多个<code>CAButton</code>组成的水平方向的控件。</p>
+		<p>每一个单独的<code>CAButton</code>可以显示一个标题或者一个图像。<code>CASegmentedControl</code>会自动调整每个<code>CAButton</code>的大小。</p>
+	</div>
+	
+	<h2>功能</h2>
+	<div>
+		<h3>创建和初始化<code>CASegmentedControl</code></h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/createWithFrame">createWithFrame</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/initWithFrame">initWithFrame</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h3>管理控件</h3>
+		<ul>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/insertSegmentWithTitle">insertSegmentWithTitle</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/insertSegmentWithBackgroundImage">insertSegmentWithBackgroundImage</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/insertSegmentWithImage">insertSegmentWithImage</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/removeSegmentAtIndex">removeSegmentAtIndex</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/removeAllSegments">removeAllSegments</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/setTitleAtIndex">setTitleAtIndex</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/setBackgroundImageAtIndex">setBackgroundImageAtIndex</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/setImageAtIndex">setImageAtIndex</a></code>
+				</span>
+			</li>
+			<li>
+				<span>
+					<code><a href="#//CASegmentedControl/setSelectedAtIndex">setSelectedAtIndex</a></code>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<h2>类方法</h2>
+	<div>
+		<a name="//CASegmentedControl/createWithFrame" title = "createWithFrame"></a>
+		<ul>
+			<li>
+				<h3><code>createWithFrame</code></h3>
+				<p>返回一个<code>CASegmentedControl</code>对象。</p>
+				<p><code>static CASegmentedControl* createWithFrame(const CCRect& rect);</code></p>
+				<h4>返回值</h4>
+				<p>返回一个<code>CASegmentedControl</code>对象。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>rect</em></dt>
+					<dd>新建<code>CASegmentedControl</code>对象的<code>frame</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/initWithFrame" title = "initWithFrame"></a>
+		<ul>
+			<li>
+				<h3><code>initWithFrame</code></h3>
+				<p>初始化<code>CASegmentedControl</code>对象的<code>frame</code>。</p>
+				<p><code>bool initWithFrame(const CCRect& rect);</code></p>
+				<h4>返回值</h4>	
+				<p>成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>rect</em></dt>
+					<dd>初始化<code>CASegmentedControl</code>对象的<code>frame</code>。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/insertSegmentWithTitle" title = "insertSegmentWithTitle"></a>
+		<ul>
+			<li>
+				<h3><code>insertSegmentWithTitle</code></h3>
+				<p>通过给定的<code>title</code>创建一个<code>segment</code>，插入在<code>CASegmentedControl</code>指定的位置。</p>
+				<p><code>virtual bool insertSegmentWithTitle(const char* title, int index, CAControlState controlState);</code></p>
+				<h4>返回值</h4>	
+				<p>操作成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>title</em></dt>
+					<dd><code>CAButton</code>在<code>controlState</code>下显示的标题。</dd>
+					<dt><em>index</em></dt>
+					<dd><code>index</code>的区间在<code>[0</code>，<code>getItemCount())</code>之间时，插入在index的位置；<code>index < 0</code>, 插入为第一个元素；<code>index >= getItemCount()</code>，插入为最后一个元素。</dd>
+					<dt><em>controlState</em></dt>
+					<dd><code>CAButton</code>标题显示的状态。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/insertSegmentWithBackgroundImage" title = "insertSegmentWithBackgroundImage"></a>
+		<ul>
+			<li>
+				<h3><code>insertSegmentWithBackgroundImage</code></h3>
+				<p>设置<code>CASlider</code>最小取值。</p>
+				<p><code>virtual bool insertSegmentWithBackgroundImage(CAImage *image, int index, CAControlState controlState);</code></p>
+				<h4>返回值</h4>	
+				<p>操作成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>image</em></dt>
+					<dd><code>CAButton</code>在<code>controlState</code>下显示的背景图片。</dd>
+					<dt><em>index</em></dt>
+					<dd><code>index</code>的区间在<code>[0</code>，<code>getItemCount())</code>之间时，插入在index的位置；<code>index < 0</code>, 插入为第一个元素；<code>index >= getItemCount()</code>，插入为最后一个元素。</dd>
+					<dt><em>controlState</em></dt>
+					<dd><code>CAButton</code>背景图片显示的状态。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/insertSegmentWithImage" title = "insertSegmentWithImage"></a>
+		<ul>
+			<li>
+				<h3><code>insertSegmentWithImage</code></h3>
+				<p>设置<code>CASlider</code>最大值。</p>
+				<p><code>virtual bool insertSegmentWithImage(CAImage *image, int index, CAControlState controlState);</code></p>
+				<h4>返回值</h4>
+				<p>操作成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>image</em></dt>
+					<dd><code>CAButton</code>在<code>controlState</code>下显示的图片。</dd>
+					<dt><em>index</em></dt>
+					<dd><code>index</code>的区间在<code>[0</code>，<code>getItemCount())</code>之间时，插入在index的位置；<code>index < 0</code>, 插入为第一个元素；<code>index >= getItemCount()</code>，插入为最后一个元素。</dd>
+					<dt><em>controlState</em></dt>
+					<dd><code>CAButton</code>图片显示的状态。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/removeSegmentAtIndex" title = "removeSegmentAtIndex"></a>
+		<ul>
+			<li>
+				<h3><code>removeSegmentAtIndex</code></h3>
+				<p>删除指定索引下的<code>CAButton</code>。</p>
+				<p><code>virtual void removeSegmentAtIndex(int index);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>index</em></dt>
+					<dd>需要删除的<code>CAButton</code>的位置。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/removeAllSegments" title = "removeAllSegments"></a>
+		<ul>
+			<li>
+				<h3><code>removeAllSegments</code></h3>
+				<p>清空控件。</p>
+				<p><code>virtual void removeAllSegments();</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>	
+				<p>无</p>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/setTitleAtIndex" title = "setTitleAtIndex"></a>
+		<ul>
+			<li>
+				<h3><code>setTitleAtIndex</code></h3>
+				<p>设置给定位置<code>CAButton</code>在给定状态下显示的标题。</p>
+				<p><code>virtual bool setTitleAtIndex(const char* title, int index, CAControlState controlState);</code></p>
+				<h4>返回值</h4>
+				<p>操作成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>title</em></dt>
+					<dd><code>CAButton</code>在<code>controlState</code>下显示的标题。</dd>
+					<dt><em>index</em></dt>
+					<dd><code>index</code>取值范围应该是<code>[0</code>，<code>getItemCount())</code>。给出需要修改的位置。</dd>
+					<dt><em>controlState</em></dt>
+					<dd><code>CAButton</code>标题显示的状态。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/setBackgroundImageAtIndex" title = "setBackgroundImageAtIndex"></a>
+		<ul>
+			<li>
+				<h3><code>setBackgroundImageAtIndex</code></h3>
+				<p>设置<code>CASlider</code>对象大值区域的图像。</p>
+				<p><code>virtual bool setBackgroundImageAtIndex(CAImage *image, int index, CAControlState controlState);</code></p>
+				<h4>返回值</h4>	
+				<p>操作成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>image</em></dt>
+					<dd><code>CAButton</code>在<code>controlState</code>下显示的背景图片。</dd>
+					<dt><em>index</em></dt>
+					<dd><code>index</code>取值范围应该是<code>[0</code>，<code>getItemCount())</code>。给出需要修改的位置。</dd>
+					<dt><em>controlState</em></dt>
+					<dd><code>CAButton</code>背景图片显示的状态。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/setImageAtIndex" title = "setImageAtIndex"></a>
+		<ul>
+			<li>
+				<h3><code>setImageAtIndex</code></h3>
+				<p>设置<code>CASlider</code>对象大值区域的图像。</p>
+				<p><code>virtual bool setImageAtIndex(CAImage *image, int index, CAControlState controlState);</code></p>
+				<h4>返回值</h4>	
+				<p>操作成功返回<code>true</code>，失败返回<code>false</code>。</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>image</em></dt>
+					<dd><code>CAButton</code>在<code>controlState</code>下显示的图片。</dd>
+					<dt><em>index</em></dt>
+					<dd><code>index</code>取值范围应该是<code>[0</code>，<code>getItemCount())</code>。给出需要修改的位置。</dd>
+					<dt><em>controlState</em></dt>
+					<dd><code>CAButton</code>图片显示的状态。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<a name="//CASegmentedControl/setSelectedAtIndex" title = "setSelectedAtIndex"></a>
+		<ul>
+			<li>
+				<h3><code>setSelectedAtIndex</code></h3>
+				<p>设置给定位置的<code>CAButton</code>为选中状态。</p>
+				<p><code>void setSelectedAtIndex(int index);</code></p>
+				<h4>返回值</h4>	
+				<p>无</p>
+				<h4>参数</h4>
+				<dl>
+					<dt><em>index</em></dt>
+					<dd>当前选中<code>CAButton</code>的索引。</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
