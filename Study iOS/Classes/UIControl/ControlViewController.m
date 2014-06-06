@@ -43,6 +43,7 @@
 - (void)dealloc {
     [_switch1 release];
     [_slider release];
+    [_datePicker release];
     [super dealloc];
 }
 @end

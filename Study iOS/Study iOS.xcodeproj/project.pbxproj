@@ -35,6 +35,8 @@
 		EA81D64619372C17002E879B /* switch_orangebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64019372C17002E879B /* switch_orangebg@2x.png */; };
 		EA81D64719372C17002E879B /* switch_rollbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64119372C17002E879B /* switch_rollbox.png */; };
 		EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA81D64219372C17002E879B /* switch_rollbox@2x.png */; };
+		EAC491AA193F6537003120EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC491A9193F6537003120EC /* ViewController.m */; };
+		EAC491AC193F6552003120EC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC491AB193F6552003120EC /* ViewController.xib */; };
 		EACEAF531938D6BA00A008EA /* PRESlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EACEAF521938D6BA00A008EA /* PRESlider.m */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,9 @@
 		EA81D64019372C17002E879B /* switch_orangebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_orangebg@2x.png"; sourceTree = "<group>"; };
 		EA81D64119372C17002E879B /* switch_rollbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_rollbox.png; sourceTree = "<group>"; };
 		EA81D64219372C17002E879B /* switch_rollbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_rollbox@2x.png"; sourceTree = "<group>"; };
+		EAC491A8193F6537003120EC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAC491A9193F6537003120EC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAC491AB193F6552003120EC /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		EACEAF511938D6BA00A008EA /* PRESlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRESlider.h; sourceTree = "<group>"; };
 		EACEAF521938D6BA00A008EA /* PRESlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRESlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +242,9 @@
 		EA81D6211936E003002E879B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				EAC491A8193F6537003120EC /* ViewController.h */,
+				EAC491A9193F6537003120EC /* ViewController.m */,
+				EAC491AB193F6552003120EC /* ViewController.xib */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 				EA81D64819372C17002E879B /* switch_rollbox@2x.png in Resources */,
 				EA81D6261936E086002E879B /* MainViewController.xib in Resources */,
 				EA81D63619370A92002E879B /* black.png in Resources */,
+				EAC491AC193F6552003120EC /* ViewController.xib in Resources */,
 				EA81D64319372C17002E879B /* switch_graybg.png in Resources */,
 				EA81D62B1936E496002E879B /* ControlViewController.xib in Resources */,
 				EA81D5FC1935ED8F002E879B /* Images.xcassets in Resources */,
@@ -386,6 +395,7 @@
 			files = (
 				EA81D61F1935EF7F002E879B /* AppDelegate.m in Sources */,
 				EA81D62E1936FD39002E879B /* AppRootController.m in Sources */,
+				EAC491AA193F6537003120EC /* ViewController.m in Sources */,
 				EA81D63C19372B11002E879B /* PRESwitch.m in Sources */,
 				EA81D6251936E086002E879B /* MainViewController.m in Sources */,
 				EA81D62A1936E496002E879B /* ControlViewController.m in Sources */,

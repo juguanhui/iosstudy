@@ -11,5 +11,6 @@
 @interface ControlViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UISwitch *switch1;
 @property (retain, nonatomic) IBOutlet UISlider *slider;
+@property (retain, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @end
