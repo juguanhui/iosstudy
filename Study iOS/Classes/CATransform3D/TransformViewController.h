@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TransformViewController : UIViewController
-@property (retain, nonatomic) IBOutlet UIImageView *leftView;
-@property (retain, nonatomic) IBOutlet UIImageView *rightView;
+@property (retain, nonatomic) IBOutlet UIImageView *bottomView;
+@property (retain, nonatomic) IBOutlet UIImageView *topView;
 - (IBAction)onOpenClick:(id)sender;
 - (IBAction)onCloseClick:(id)sender;
 

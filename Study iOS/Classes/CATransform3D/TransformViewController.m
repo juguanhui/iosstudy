@@ -22,8 +22,8 @@
 @synthesize rcLeft;
 @synthesize rcRight;
 
-@synthesize leftView;
-@synthesize rightView;
+@synthesize bottomView;
+@synthesize topView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,6 +41,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIView *leftView = [[UIView alloc] initWithFrame:rcLeft];
+    leftView.backgroundColor = [UIColor blueColor];
+    [self.view insertSubview:leftView atIndex:0];
+    [leftView release];
+    
+    UIView *rightView = [[UIView alloc] initWithFrame:rcRight];
+    rightView.backgroundColor = [UIColor redColor];
+    [self.view insertSubview:rightView atIndex:0];
+    [rightView release];
+    
+    bottomView.layer.zPosition = leftView.layer.zPosition + rightView.layer.zPosition + 100;
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,36 +61,56 @@
 }
 
 - (void)dealloc {
-    [leftView release];
-    [rightView release];
+    [bottomView release];
+    [topView release];
     [super dealloc];
 }
 
 - (IBAction)onOpenClick:(id)sender {
-    [self.view bringSubviewToFront:leftView];
+    const CGFloat M34Transform = -0.0004;   // 透视效果
     
-    CGPoint ptBegin =  CGPointMake(rcBegin.origin.x,
-                                   rcBegin.origin.y + rcBegin.size.height / 2);
-    CGPoint ptLeftEnd =  CGPointMake(rcLeft.origin.x,
-                                     rcLeft.origin.y + rcLeft.size.height / 2);
-    
-    CGPoint scaleLeftEnd = CGPointMake(rcLeft.size.width / rcBegin.size.width,
-                                         rcLeft.size.height / rcBegin.size.height);
-    CGPoint scaleLeftBegin = CGPointMake(1, 1);
-    
+    CGPoint ptTopBegin =  CGPointMake(rcBegin.origin.x + rcBegin.size.width / 2,
+                                      rcBegin.origin.y + rcBegin.size.height / 2);
+    CGPoint scaleTopBegin = CGPointMake(1, 1);
     CATransform3D transLeft = CATransform3DIdentity;
-    transLeft = CATransform3DScale(transLeft, scaleLeftBegin.x, scaleLeftBegin.y, 1);
-    leftView.layer.transform = transLeft;
-    leftView.layer.position = ptBegin;
+    transLeft = CATransform3DScale(transLeft, scaleTopBegin.x, scaleTopBegin.y, 1);
+    topView.layer.transform = transLeft;
+    topView.layer.position = ptTopBegin;
     
-    [UIView animateWithDuration:1
+    CGPoint ptBottomBegin = CGPointMake(rcBegin.origin.x + rcBegin.size.width,
+                                       rcBegin.origin.y + rcBegin.size.height / 2);
+    CGPoint scaleBottomBegin = CGPointMake(1, 1);
+    CATransform3D transBottom = CATransform3DIdentity;
+    transBottom.m34 = M34Transform;
+    transBottom = CATransform3DRotate(transBottom, M_PI_2, 0, 1, 0);
+    transBottom = CATransform3DScale(transBottom, scaleBottomBegin.x, scaleBottomBegin.y, 1);
+    bottomView.layer.transform = transBottom;
+    bottomView.layer.anchorPoint = CGPointMake(0, 0.5);
+    bottomView.layer.position = ptBottomBegin;
+    bottomView.layer.doubleSided = NO;
+    
+    [UIView animateWithDuration:2
                           delay:0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^ {
+                         CGPoint ptTopEnd =  CGPointMake(rcLeft.origin.x + rcLeft.size.width / 2,
+                                                         rcLeft.origin.y + rcLeft.size.height / 2);
+                         CGPoint scaleTopEnd = CGPointMake(rcLeft.size.width / rcBegin.size.width,
+                                                            rcLeft.size.height / rcBegin.size.height);
                          CATransform3D transLeft = CATransform3DIdentity;
-                         transLeft = CATransform3DScale(transLeft, scaleLeftEnd.x, scaleLeftEnd.y, 1);
-                         leftView.layer.transform = transLeft;
-                         leftView.layer.position = ptLeftEnd;
+                         transLeft = CATransform3DScale(transLeft, scaleTopEnd.x, scaleTopEnd.y, 1);
+                         topView.layer.transform = transLeft;
+                         topView.layer.position = ptTopEnd;
+                         
+                         CGPoint ptRightEnd = CGPointMake(rcRight.origin.x,
+                                                          rcRight.origin.y + rcRight.size.height / 2);
+                         CGPoint scaleBottomEnd = CGPointMake(rcRight.size.width / rcBegin.size.width,
+                                                              rcRight.size.height / rcBegin.size.height);
+                         CATransform3D transBottom = CATransform3DIdentity;
+                         transBottom.m34 = M34Transform;
+                         transBottom = CATransform3DScale(transBottom, scaleBottomEnd.x, scaleBottomEnd.y, 1);
+                         bottomView.layer.transform = transBottom;
+                         bottomView.layer.position = ptRightEnd;
                      }
                      completion:^(BOOL finished) {
                          
@@ -87,8 +118,42 @@
 }
 
 - (IBAction)onCloseClick:(id)sender {
+    const CGFloat M34Transform = -0.0004;   // 透视效果
+    CGPoint ptRightEnd = CGPointMake(rcRight.origin.x,
+                                     rcRight.origin.y + rcRight.size.height / 2);
+    CGPoint scaleBottomEnd = CGPointMake(rcRight.size.width / rcBegin.size.width,
+                                         rcRight.size.height / rcBegin.size.height);
+    CATransform3D transBottom = CATransform3DIdentity;
+    transBottom.m34 = M34Transform;
+    transBottom = CATransform3DScale(transBottom, scaleBottomEnd.x, scaleBottomEnd.y, 1);
+    bottomView.layer.transform = transBottom;
+    bottomView.layer.position = ptRightEnd;
     
-    rightView.frame = rcBegin;
-    leftView.frame = rcBegin;
+    [UIView animateWithDuration:1
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^ {
+                         CGPoint ptTopBegin =  CGPointMake(rcBegin.origin.x + rcBegin.size.width / 2,
+                                                           rcBegin.origin.y + rcBegin.size.height / 2);
+                         CGPoint scaleLeftBegin = CGPointMake(1, 1);
+                         CATransform3D transLeft = CATransform3DIdentity;
+                         transLeft = CATransform3DScale(transLeft, scaleLeftBegin.x, scaleLeftBegin.y, 1);
+                         topView.layer.transform = transLeft;
+                         topView.layer.position = ptTopBegin;
+                         
+                         CGPoint ptBottomBegin = CGPointMake(rcBegin.origin.x + rcBegin.size.width,
+                                                             rcBegin.origin.y + rcBegin.size.height / 2);
+                         CGPoint scaleBottomBegin = CGPointMake(1, 1);
+                         CATransform3D transBottom = CATransform3DIdentity;
+                         transBottom.m34 = M34Transform;
+                         transBottom = CATransform3DRotate(transBottom, M_PI_2, 0, 1, 0);
+                         transBottom = CATransform3DScale(transBottom, scaleBottomBegin.x, scaleBottomBegin.y, 1);
+                         bottomView.layer.transform = transBottom;
+                         bottomView.layer.anchorPoint = CGPointMake(0, 0.5);
+                         bottomView.layer.position = ptBottomBegin;
+                     }
+                     completion:^(BOOL finished) {
+                         
+                     }];
 }
 @end
