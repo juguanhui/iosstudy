@@ -15,5 +15,6 @@
 
 - (IBAction)onControlClick:(id)sender;
 - (IBAction)onTransformClick:(id)sender;
+- (IBAction)onGifViewClick:(id)sender;
 
 @end

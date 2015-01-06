@@ -156,4 +156,8 @@
                          
                      }];
 }
+
+- (IBAction)onViewCloseClick:(id)sender {
+    [self.delegate onViewCloseClick];
+}
 @end

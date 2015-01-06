@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "ControlViewController.h"
 #import "TransformViewController.h"
+#import "CustomViewController.h"
 
 @interface MainViewController ()
 
@@ -52,6 +53,12 @@
 
 - (IBAction)onTransformClick:(id)sender {
     TransformViewController* viewController = [[TransformViewController alloc] initWithNibName:@"TransformViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+    [viewController release];
+}
+
+- (IBAction)onGifViewClick:(id)sender {
+    CustomViewController* viewController = [[CustomViewController alloc] initWithNibName:@"CustomViewController" bundle:nil];
     [self.navigationController pushViewController:viewController animated:YES];
     [viewController release];
 }

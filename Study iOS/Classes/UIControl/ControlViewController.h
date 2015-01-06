@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ControlViewController : UIViewController
+@interface ControlViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (retain, nonatomic) IBOutlet UISwitch *switch1;
 @property (retain, nonatomic) IBOutlet UISlider *slider;
 @property (retain, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (retain, nonatomic) IBOutlet UISegmentedControl *segment;
+@property (retain, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @end

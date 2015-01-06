@@ -8,10 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TransformViewControllerDelegate
+
+- (void)onViewCloseClick;
+
+@end
+
 @interface TransformViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UIImageView *bottomView;
 @property (retain, nonatomic) IBOutlet UIImageView *topView;
+@property (nonatomic, assign) id<TransformViewControllerDelegate> delegate;
+
 - (IBAction)onOpenClick:(id)sender;
 - (IBAction)onCloseClick:(id)sender;
+- (IBAction)onViewCloseClick:(id)sender;
 
 @end
